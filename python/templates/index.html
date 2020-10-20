@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Tak's Soundboard</title>
+<script>
+    function PlaySound(sound) {
+        var snd = new Audio(sound);
+        snd.play();
+    }
+</script>
+<link rel="stylesheet" href='css/tak.css' }}>
+</head>
+<body>
+
+<div class="flex-container">
+	<img src='img/tak.webp' class="tak"/>
+	<div>
+		<h1 class="head">Tak's Soundboard</h1><br>
+		<h2 class="head">of Horrible Doom</h2><br>
+	</div>
+</div>
+
+<div class="flex-container">
+{% for snd in snds %}
+    <div>
+        <button class="button" onclick="PlaySound('snd/{{ snd[0] }}')">
+            {{ snd[1] }}
+        </button>
+	</div><br>
+{% endfor %}
+</div>
+
+</body>
+</html>
