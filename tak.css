@@ -1,0 +1,44 @@
+body {
+	background-color: #220044;
+}
+.flex-container {
+    align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+.button {
+	background-color: black;
+    border: none;
+	color: #AA00FF;
+	font-family: "Invader", sans-serif;
+	font-size: 30;
+	margin: 10px 10px;
+	padding: 10px 20px;
+}
+.button:hover {
+	background-color: #333333;
+}
+.head {
+	color: #AA00FF;
+	font-family: "Invader", sans-serif;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+    text-align: center;
+}
+h1.head {
+	font-size: 60px;
+}
+h2.head {
+	font-size: 40px;
+}
+.tak
+{
+    text-align: center;
+    float: left;
+    margin: 20px;
+    width: 80px;
+}
